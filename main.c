@@ -10,6 +10,7 @@ while(*argv){
    id=atoi(*argv);
    if(id!=0 && *(argv+1) {
    score=atoi(*(argv+1));
+   printf("Inserting %d:%d\n",id,score);
   head=insert(id,score);
   argv+=2;
 }
