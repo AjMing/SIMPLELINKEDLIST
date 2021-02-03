@@ -1,20 +1,16 @@
-//
-//  main.c
-//  First arg
-//
-//  Created by Mingmanas Sivaraksa on 2/1/2564 BE.
-//
-
-#include <stdio.h>
-
-int main(int argc, char * argv[]) {
-    
-    printf("I have %d arguments\n",argc);
-    int i,N;
-    for(i=1;i<argc;i++){
-        printf("arg %d: %s\n",i,argv[i]);
-        
-    }
-    
-    return 0;
+int main(int argc, char **argv){
+Lnode head;
+int i,id,score;
+argv++;
+while(*argv){
+   id=atoi(*argv);
+   if(id!=0 && *(argv+1) {
+   score=atoi(*(argv+1));
+  insert(&head,id,score);
+  argv+=2;
+}
+}
+   printlist(head);
+   Find_avg(head);
+   return 0;
 }
